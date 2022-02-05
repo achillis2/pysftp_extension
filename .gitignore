@@ -1,0 +1,13 @@
+# use glob syntax.
+syntax: glob
+
+*.pyc
+*~
+docs/_build
+dist/*
+*.egg-info/*
+.cache
+.tox
+*.swp
+Session.vim
+.pypirc
