@@ -13,7 +13,7 @@ Example
     import pysftp_extension
 
     with pysftp_extension.Connection('hostname', username='me', password='secret', disabled_algorithms=dict(pubkeys=["rsa-sha2-512", "rsa-sha2-256"])) as sftp:
-        with sftp.cd('public'):             # temporarily chdir to public
+        with sftp.cd('public'):             # temporarily chdir to public  
             sftp.put('/my/local/filename')  # upload file to public/ on remote
             sftp.get('remote_file')         # get a remote file
 
